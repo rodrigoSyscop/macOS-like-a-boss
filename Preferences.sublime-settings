@@ -1,0 +1,13 @@
+{
+	"color_scheme": "Packages/Monokai - Spacegray/Monokai - Spacegray.tmTheme",
+	"font_face": "SF Mono",
+	"font_size": 11,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"line_padding_bottom": 5,
+	"line_padding_top": 5,
+	"soda_tabs_autowidth": false,
+	"theme": "SoDaReloaded Light.sublime-theme"
+}
