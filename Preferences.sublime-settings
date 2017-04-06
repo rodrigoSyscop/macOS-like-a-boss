@@ -1,13 +1,29 @@
 {
+	"auto_complete_commit_on_tab": true,
+	"bold_folder_labels": true,
 	"color_scheme": "Packages/Monokai - Spacegray/Monokai - Spacegray.tmTheme",
-	"font_face": "SF Mono",
-	"font_size": 11,
+	"detect_indentation": true,
+	"draw_indent_guides": false,
+	"enable_tab_scrolling": false,
+	"ensure_newline_at_eof_on_save": true,
+	"font_face": "Source Code Pro",
+	"font_size": 13,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
 	"line_padding_bottom": 5,
 	"line_padding_top": 5,
+	"margin": 0,
+	"rulers": [79],
 	"soda_tabs_autowidth": false,
-	"theme": "SoDaReloaded Light.sublime-theme"
+	"tab_completion": true,
+	"theme": "SoDaReloaded Light.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"use_simple_full_screen": true,
+	"use_tab_stops": true,
+	"word_wrap": true
 }
