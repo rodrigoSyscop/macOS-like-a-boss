@@ -5,11 +5,12 @@ We are going to manage our packages using `brew` or other console commands whene
 
 ## Requirements
 
-
 ### Install Homebrew
 
+Ref: [https://brew.sh](https://brew.sh)
+
 ```bash
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 You might want to check if brew was correctly installed using `brew doctor`.
@@ -17,30 +18,33 @@ You might want to check if brew was correctly installed using `brew doctor`.
 
 ### Install Homebrew Cask
 
+Ref: [https://caskroom.github.io](https://caskroom.github.io)
+
 ```bash
-brew tap caskroom/cask
+$ brew tap caskroom/cask
 ```
 
 ### Install some cool stuff
 
-Make sure to read what you're installing:
+Pick just what you need:
 
+### SysAdmin stuff
 ```bash
-brew cask install iterm2 sublime-text github-desktop sequel-pro vlc transmission  firefox google-chrome
+$ brew cask install iterm2
+```
+#### Dev stuff
+```bash
+$ brew cask install sublime-text github-desktop sequel-pro firefox google-chrome
+```
+#### Audio/Video Stuff
+```bash
+$ brew cask install vlc transmission spotify
 ```
 
-### Install Source Code Pro font
-
-Download, extract and open with `Font Book` app:
-[Adobe Source Code Pro (zip)](https://github.com/adobe-fonts/source-code-pro/archive/2.030R-ro/1.050R-it.zip)
-
-
-## TODO:
-- terminal colors
-- pappermint color pallete.
-- .bash_profile
-- python3
-- brew autocomplete
+### Social Stuff
+```bash
+$ brew cask install telegram skype whatsapp
+```
 
 
 ## SSH Key Pairs
@@ -107,3 +111,62 @@ Ref:
 
 I personally like `SF Mono`, `Source Code Pro`, `Monaco`, and `Menlo` fonts, on this order and size `11`.
 
+You can get the Adobe Source Code Pro font [here](https://github.com/adobe-fonts/source-code-pro/archive/2.030R-ro/1.050R-it.zip).
+
+Download and extract, then install with `Font Book` app.
+
+
+## Python Development Environment
+
+MacOS comes with Python 2.7, so I'm going to install Python3 using brew and show how simple is to get started working with venvs on Python3:
+
+
+### Install python3
+
+```bash
+$ brew tap homebrew/core
+$ brew install python3
+$ pip3 install --upgrade pip setuptools wheel
+```
+
+### Create a common virtual env area
+
+```bash
+$ mkdir -p ~/Code/python3_envs
+```
+
+### Creating a django project for instance
+
+First we have to create our virtual environment.
+ref: [https://docs.python.org/3/library/venv.html](https://docs.python.org/3/library/venv.html)
+
+```bash
+# create the virtual environment
+$ python3 -m venv ~/Code/python3_envs/projectX
+
+# load the venv
+$ source ~/Code/python3_envs/projectX/bin/activate
+# after issue the command above you should see
+# (projectX) prefixing your command prompt
+# alternatively might run pip --version or python --version
+(projectX) $ python --version
+Python 3.6.1
+(projectX) $ deactivate
+$ python --version
+Python 2.7.10
+```
+
+Now we are able to install and create a new Django 1.11 project inside projectX python virtual environment.
+
+```bash
+# activate your django venv
+$ source ~/Code/python3_envs/projectX/bin/activate
+(projectX) $ cd ~/Code
+(projectX) $ pip install django
+(projectX) $ django-admin startproject projectX
+(projectX) $ pip freeze  > requirements.txt
+(projectX) $ ./manage.py runserver
+
+# do some work
+(projectX) $ exit
+```
