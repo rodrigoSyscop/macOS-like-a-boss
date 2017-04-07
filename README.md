@@ -36,7 +36,7 @@ $ brew cask install iterm2
 
 ### Dev stuff
 ```bash
-$ brew cask install sublime-text github-desktop sequel-pro firefox google-chrome
+$ brew cask install git sublime-text github-desktop sequel-pro firefox google-chrome
 ```
 
 ### Audio/Video Stuff
@@ -95,6 +95,58 @@ You can get the Adobe Source Code Pro font [here](https://github.com/adobe-fonts
 
 Download and extract, then install with `Font Book` app.
 
+## Bash completions
+
+It's petty useful having some clue hitting `[TAB][TAB]` when typing a command
+like happens in Ubuntu. Well can get the same results installing `bash-completion`:
+
+```bash
+$ brew install bash-completion
+```
+
+After runthat command, in typical brew fashin, it will request that you add the following tidbit to your `~/.bash_profile`. Don't forget this part, it's critical! See the `Bash Completion` section on [my .bash_profile](https://github.com/RodrigoJimmy/macOS/blob/master/files/bash_profile) on your own `~/.bash_profile).
+
+```bash
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+```
+
+There are many packages related to completions:
+```bash
+$ brew search completion
+```
+
+However, some packages like `git` already install its related completions, see:
+```
+$ brew install git
+Updating Homebrew...
+==> Auto-updated Homebrew!
+Updated 2 taps (caskroom/cask, homebrew/core).
+No changes to formulae.
+
+==> Downloading https://homebrew.bintray.com/bottles/git-2.12.2.sierra.bottle.ta
+######################################################################## 100.0%
+==> Pouring git-2.12.2.sierra.bottle.tar.gz
+==> Caveats
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+
+zsh completions and functions have been installed to:
+  /usr/local/share/zsh/site-functions
+
+Emacs Lisp files have been installed to:
+  /usr/local/share/emacs/site-lisp/git
+==> Summary
+🍺  /usr/local/Cellar/git/2.12.2: 1,454 files, 33.0MB
+
+```
+
+Did you see git completions being installed on `Caveats` section?
+Now try typing:
+
+```bash
+$ git [TAB][TAB]
+```
+Cool!
 
 ## SSH Key Pairs
 
