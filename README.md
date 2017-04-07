@@ -29,7 +29,7 @@ Make sure to read what you're installing:
 brew cask install iterm2 sublime-text github-desktop sequel-pro vlc transmission  firefox google-chrome
 ```
 
-### Install Source Code Pro font 
+### Install Source Code Pro font
 
 Download, extract and open with `Font Book` app:
 [Adobe Source Code Pro (zip)](https://github.com/adobe-fonts/source-code-pro/archive/2.030R-ro/1.050R-it.zip)
@@ -39,7 +39,7 @@ Download, extract and open with `Font Book` app:
 - terminal colors
 - pappermint color pallete.
 - .bash_profile
-- python3 
+- python3
 - brew autocomplete
 
 
@@ -65,3 +65,20 @@ Every time you connect to a ssh server thats needs your key, you will be prompte
 On macOS you just need to put `AddKeysToAgent yes` on your sshd agent config file `~/.ssh/config` (e.g.: [config](https://github.com/RodrigoJimmy/macOS/blob/master/files/ssh_config))
 
 ref: https://wiki.archlinux.org/index.php/SSH_keys
+
+
+## Sublime Text 3
+
+A general set up for day to day using.
+
+On latest builds you shoud easly install _Package Control_ throught main menu. On 3126 build: "Tools" -> "Install Package Control..."
+After a couple seconds you shoud see a _successfully installed_ message.
+Now we are able to use `Cmd` + `Shift` + `P` and look for `Package Control: Install Package`, then install these two packages:
+
+- `Theme - SoDa Reloaded`
+- `Monokai - SpaceGray`
+
+With those two packages installed we can change the sublime user settings.
+
+You can use my [Sublime Settings](https://github.com/RodrigoJimmy/macOS/blob/master/files/Preferences.sublime-settings) as a starting point.
+
