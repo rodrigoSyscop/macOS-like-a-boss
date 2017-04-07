@@ -71,16 +71,26 @@ ref: https://wiki.archlinux.org/index.php/SSH_keys
 
 A general set up for day to day using.
 
-On latest builds you shoud easly install _Package Control_ throught main menu. On 3126 build: "Tools" -> "Install Package Control..."
+### Install Package Control
+
+On latest builds you shoud easly install _Package Control_ through main menu. On 3126 build:
+ `Tools` -> `Install Package Control...`
+
 After a couple seconds you shoud see a _successfully installed_ message.
-Now we are able to use `Cmd` + `Shift` + `P` and look for `Package Control: Install Package`, then install these two packages:
+
+### Installing Packages
+
+Now we are able to hit `Cmd` + `Shift` + `P` keys and look for `Package Control: Install Package`, then install these two packages:
 
 - `Theme - SoDa Reloaded`
 - `Monokai - SpaceGray`
 
+### User Settings
+
 With those two packages installed we can change the sublime user settings.
 
 You can use my [Sublime Settings](https://github.com/RodrigoJimmy/macOS/blob/master/files/Preferences.sublime-settings) as a starting point.
+
 
 ## Terminal and iTerm2 colors
 
