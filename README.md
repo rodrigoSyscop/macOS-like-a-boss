@@ -43,7 +43,7 @@ Download, extract and open with `Font Book` app:
 - brew autocomplete
 
 
-## Creating your virtual ID
+## SSH Key Pairs
 
 If you need/want to create a new ssh key pair:
 
@@ -60,5 +60,8 @@ Just in case you are like me and wants to change the passphrase from time to tim
 ```bash
 $ ssh-keygen -f ~/.ssh/id_rsa -p
 ```
+
+Every time you connect to a ssh server thats needs your key, you will be prompted to your passphrase. To avoid this, you can safely use an `ssh-agent`.
+On macOS you just need to put `AddKeysToAgent yes` on your sshd agent config file `~/.ssh/config` (e.g.: [config](https://github.com/RodrigoJimmy/macOS/blob/master/files/ssh_config))
 
 ref: https://wiki.archlinux.org/index.php/SSH_keys

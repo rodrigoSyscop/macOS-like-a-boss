@@ -1,0 +1,14 @@
+host * 
+	ServerAliveInterval 5 
+	ForwardAgent yes
+	AddKeysToAgent yes
+
+host srv.example.com srv
+	hostname srv.example.com
+	user myusername
+	IdentityFile ~/.ssh/id_rsa_1
+
+host srv2.example.com.com srv2
+	hostname srv2.example.com.com
+	user myusername
+	IdentityFile ~/.ssh/id_rsa_2
