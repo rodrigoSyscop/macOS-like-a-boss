@@ -89,10 +89,11 @@ I don't know about you, but I do like a colorful terminal.
 
 ### Peppermint color scheme
 
-You should try peppermint color theme [for iTerm2](https://raw.githubusercontent.com/dotzero/iTerm-2-Peppermint/master/Peppermint.itermcolors) or [for terminal](https://noahfrederick.com/get/Peppermint.1.2.terminal.zip)
-ref:
+You should try peppermint color theme [for iTerm2](https://raw.githubusercontent.com/dotzero/iTerm-2-Peppermint/master/Peppermint.itermcolors) or [for terminal](https://noahfrederick.com/get/Peppermint.1.2.terminal.zip).
+
+Ref:
 - [Peppermint for terminal](https://noahfrederick.com/log/lion-terminal-theme-peppermint.html)
 - [Peppermint for iTerm2](https://github.com/dotzero/iTerm-2-Peppermint)
 
-I personally like `SF Mono`, `Source Code Pro`, `Monaco`, and `Menlo` fonts on this order.
+I personally like `SF Mono`, `Source Code Pro`, `Monaco`, and `Menlo` fonts, on this order and size `11`.
 
