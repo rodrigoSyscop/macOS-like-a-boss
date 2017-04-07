@@ -41,3 +41,24 @@ Download, extract and open with `Font Book` app:
 - .bash_profile
 - python3 
 - brew autocomplete
+
+
+## Creating your virtual ID
+
+If you need/want to create a new ssh key pair:
+
+```bash
+$ ssh-keygen -t rsa -b 3072 -C "$(whoami)@$(hostname)-$(date +'%Y-%m-%d')"
+```
+Just confirm the default directory locations to put your new key pair and **use a secure passphrase**q.
+
+> It is also possible to create your private key without a passphrase. While this can be convenient, you need to be aware of the associated risks. Without a passphrase, your private key will be stored on disk in an unencrypted form. Anyone who gains access to your private key file will then be able to assume your identity on any SSH server to which you connect using key-based authentication. Furthermore, without a passphrase, you must also trust the root user, as he can bypass file permissions and will be able to access your unencrypted private key file at any time.
+
+
+Just in case you are like me and wants to change the passphrase from time to time:
+
+```bash
+$ ssh-keygen -f ~/.ssh/id_rsa -p
+```
+
+ref: https://wiki.archlinux.org/index.php/SSH_keys
