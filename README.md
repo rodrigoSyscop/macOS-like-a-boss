@@ -1,12 +1,12 @@
-# macOS
+# macOS-like-a-boss
+
 My personal macOS files settings and scripts.
 
 We are going to manage our packages using `brew` or other console commands whenever it's possible.
 
-## Requirements
 
-### Install Homebrew
-
+## Install Homebrew
+Homebrew is like a package manager (`apt-get`, `yum`, `zypper`, `dnf`) for mac.
 Ref: [https://brew.sh](https://brew.sh)
 
 ```bash
@@ -16,15 +16,16 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 You might want to check if brew was correctly installed using `brew doctor`.
 
 
-### Install Homebrew Cask
+## Install Homebrew Cask
 
+Homebrew Cask extends Homebrew and brings its elegance, simplicity, and speed to macOS applications and large binaries alike.
 Ref: [https://caskroom.github.io](https://caskroom.github.io)
 
 ```bash
 $ brew tap caskroom/cask
 ```
 
-### Install some cool stuff
+## Install Some Cool Stuff
 
 Pick just what you need:
 
@@ -32,11 +33,13 @@ Pick just what you need:
 ```bash
 $ brew cask install iterm2
 ```
-#### Dev stuff
+
+### Dev stuff
 ```bash
 $ brew cask install sublime-text github-desktop sequel-pro firefox google-chrome
 ```
-#### Audio/Video Stuff
+
+### Audio/Video Stuff
 ```bash
 $ brew cask install vlc transmission spotify
 ```
@@ -45,30 +48,6 @@ $ brew cask install vlc transmission spotify
 ```bash
 $ brew cask install telegram skype whatsapp
 ```
-
-
-## SSH Key Pairs
-
-If you need/want to create a new ssh key pair:
-
-```bash
-$ ssh-keygen -t rsa -b 3072 -C "$(whoami)@$(hostname)-$(date +'%Y-%m-%d')"
-```
-Just confirm the default directory locations to put your new key pair and **use a secure passphrase**q.
-
-> It is also possible to create your private key without a passphrase. While this can be convenient, you need to be aware of the associated risks. Without a passphrase, your private key will be stored on disk in an unencrypted form. Anyone who gains access to your private key file will then be able to assume your identity on any SSH server to which you connect using key-based authentication. Furthermore, without a passphrase, you must also trust the root user, as he can bypass file permissions and will be able to access your unencrypted private key file at any time.
-
-
-Just in case you are like me and wants to change the passphrase from time to time:
-
-```bash
-$ ssh-keygen -f ~/.ssh/id_rsa -p
-```
-
-Every time you connect to a ssh server thats needs your key, you will be prompted to your passphrase. To avoid this, you can safely use an `ssh-agent`.
-On macOS you just need to put `AddKeysToAgent yes` on your sshd agent config file `~/.ssh/config` (e.g.: [config](https://github.com/RodrigoJimmy/macOS/blob/master/files/ssh_config))
-
-ref: https://wiki.archlinux.org/index.php/SSH_keys
 
 
 ## Sublime Text 3
@@ -88,6 +67,7 @@ Now we are able to hit `Cmd` + `Shift` + `P` keys and look for `Package Control:
 
 - `Theme - SoDa Reloaded`
 - `Monokai - SpaceGray`
+
 
 ### User Settings
 
@@ -114,6 +94,31 @@ I personally like `SF Mono`, `Source Code Pro`, `Monaco`, and `Menlo` fonts, on 
 You can get the Adobe Source Code Pro font [here](https://github.com/adobe-fonts/source-code-pro/archive/2.030R-ro/1.050R-it.zip).
 
 Download and extract, then install with `Font Book` app.
+
+
+## SSH Key Pairs
+
+If you need/want to create a new ssh key pair:
+
+```bash
+$ ssh-keygen -t rsa -b 3072 -C "$(whoami)@$(hostname)-$(date +'%Y-%m-%d')"
+```
+Just confirm the default directory locations to put your new key pair and **use a secure passphrase**q.
+
+> It is also possible to create your private key without a passphrase. While this can be convenient, you need to be aware of the associated risks. Without a passphrase, your private key will be stored on disk in an unencrypted form. Anyone who gains access to your private key file will then be able to assume your identity on any SSH server to which you connect using key-based authentication. Furthermore, without a passphrase, you must also trust the root user, as he can bypass file permissions and will be able to access your unencrypted private key file at any time.
+
+
+Just in case you are like me and wants to change the passphrase from time to time:
+
+```bash
+$ ssh-keygen -f ~/.ssh/id_rsa -p
+```
+
+Every time you connect to a ssh server thats needs your key, you will be prompted to your passphrase. To avoid this, you can safely use an `ssh-agent`.
+On macOS you just need to put `AddKeysToAgent yes` on your sshd agent config file `~/.ssh/config` (e.g.: [config](https://github.com/RodrigoJimmy/macOS/blob/master/files/ssh_config))
+
+ref: https://wiki.archlinux.org/index.php/SSH_keys
+
 
 
 ## Python Development Environment
