@@ -82,3 +82,17 @@ With those two packages installed we can change the sublime user settings.
 
 You can use my [Sublime Settings](https://github.com/RodrigoJimmy/macOS/blob/master/files/Preferences.sublime-settings) as a starting point.
 
+## Terminal and iTerm2 colors
+
+In order to enable colors in macOS terminal and iTerm2 you must have the `Colorful Terminal` block of [my .bash_profile](https://github.com/RodrigoJimmy/macOS/blob/master/files/bash_profile) on your own `~/.bash_profile` file.
+I don't know about you, but I do like a colorful terminal.
+
+### Peppermint color scheme
+
+You should try peppermint color theme [for iTerm2](https://raw.githubusercontent.com/dotzero/iTerm-2-Peppermint/master/Peppermint.itermcolors) or [for terminal](https://noahfrederick.com/get/Peppermint.1.2.terminal.zip)
+ref:
+- [Peppermint for terminal](https://noahfrederick.com/log/lion-terminal-theme-peppermint.html)
+- [Peppermint for iTerm2](https://github.com/dotzero/iTerm-2-Peppermint)
+
+I personally like `SF Mono`, `Source Code Pro`, `Monaco`, and `Menlo` fonts on this order.
+
