@@ -104,7 +104,8 @@ like happens in Ubuntu. Well can get the same results installing `bash-completio
 $ brew install bash-completion
 ```
 
-After runthat command, in typical brew fashin, it will request that you add the following tidbit to your `~/.bash_profile`. Don't forget this part, it's critical! See the `Bash Completion` section on [my .bash_profile](https://github.com/RodrigoJimmy/macOS/blob/master/files/bash_profile) on your own `~/.bash_profile).
+After run that command, in typical brew fashion, it will request that you add the following tidbit to your `~/.bash_profile`. Don't forget this part, it's critical!
+See the `Bash Completion` section on [my .bash_profile](https://github.com/RodrigoJimmy/macOS/blob/master/files/bash_profile) on your own `~/.bash_profile`):
 
 ```bash
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
@@ -140,7 +141,7 @@ Emacs Lisp files have been installed to:
 
 ```
 
-Did you see git completions being installed on `Caveats` section?
+Did you see the git completions being installed on `Caveats` section?
 Now try typing:
 
 ```bash
