@@ -41,7 +41,7 @@ $ brew cask install git sublime-text github-desktop sequel-pro firefox google-ch
 
 ### Audio/Video Stuff
 ```bash
-$ brew cask install vlc transmission spotify
+$ brew cask install vlc transmission spotify kindle
 ```
 
 ### Social Stuff
